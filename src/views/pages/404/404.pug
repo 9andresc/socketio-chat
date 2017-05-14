@@ -1,0 +1,9 @@
+extends ../../base/_base
+
+block css
+  link(rel='stylesheet', href=`/css/${cssFilename}`)
+
+block content
+   div(class='intro')
+    h1(class='t1 intro__title') Página no encontrada
+    a(class='intro__button-link' href='/') Volver al inicio

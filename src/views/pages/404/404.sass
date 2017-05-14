@@ -1,0 +1,53 @@
+@import "../../base/base"
+@import "../../helpers/helpers"
+
+.intro
+  align-items: center
+  flex-direction: column
+  justify-content: center
+
+  display: flex
+
+  height: 100vh
+  padding: 2rem
+
+  &__title
+    +media('>phone', '<=tablet')
+      font-size: 2rem
+
+    +media('>tablet')
+      font-size: 2.4rem
+
+    margin-bottom: 2rem
+
+    color: $grey-darker
+    font-weight: bold
+    font-size: 1.6rem
+    text-align: center
+
+  &__button-link
+    +media('>phone')
+      padding: 1em 1.5em
+
+    appearance: none
+    border: 0
+    border-radius: 300px
+    box-shadow: none
+    cursor: pointer
+    padding: .5em 1em
+
+    background-color: $primary-color
+
+    color: $white
+    font-family: $primary-font-family
+    font-size: 1rem
+    font-weight: bold
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+
+    &:focus
+      outline: none
+
+    &:visited
+      color: $white

@@ -1,0 +1,90 @@
+{
+  "name": "socketio-chat",
+  "version": "1.0.0",
+  "description": "A socket-based chat with binary exchange capabilities",
+  "main": "src/app.js",
+  "repository": "git@github.com:gustavoandrescabral/socketio-chat.git",
+  "bugs": {
+    "url": "https://github.com:gustavoandrescabral/socketio-chat/issues"
+  },
+  "homepage": "https://github.com:gustavoandrescabral/socketio-chat#readme",
+  "author": "Gustavo <andrescabral.c@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=development gulp build:publicSources",
+    "build:prod": "cross-env NODE_ENV=production gulp build:publicSources",
+    "cmt": "git-cz",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint --fix src/**/*.js",
+    "precommit": "yarn lint && yarn test",
+    "start": "cross-env NODE_ENV=development gulp",
+    "start:prod": "cross-env NODE_ENV=production gulp",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "19.0.0",
+    "babel-preset-env": "1.4.0",
+    "babelify": "7.3.0",
+    "browserify": "14.3.0",
+    "commitizen": "2.9.6",
+    "cross-env": "4.0.0",
+    "cz-conventional-changelog": "2.0.0",
+    "del": "2.2.2",
+    "eslint": "3.19.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-node": "4.2.2",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
+    "event-stream": "3.3.4",
+    "globby": "6.1.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-babel": "6.1.2",
+    "gulp-clean-css": "3.0.4",
+    "gulp-connect": "5.0.0",
+    "gulp-if": "2.0.2",
+    "gulp-nodemon": "2.2.1",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.1.0",
+    "gulp-standard": "10.0.0",
+    "gulp-uglify": "2.1.2",
+    "husky": "0.13.3",
+    "jest": "19.0.2",
+    "node-sass": "4.5.2",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "1.1.0"
+  },
+  "dependencies": {
+    "body-parser": "1.17.1",
+    "dotenv": "4.0.0",
+    "express": "4.15.2",
+    "helmet": "3.5.0",
+    "include-media": "1.4.9",
+    "mongodb-uri": "0.9.7",
+    "mongoose": "4.9.7",
+    "morgan": "1.8.1",
+    "pug": "2.0.0-beta.12",
+    "validator": "7.0.0",
+    "winston": "2.3.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!**/node_modules/**",
+      "!**/public/**"
+    ],
+    "roots": [
+      "src"
+    ],
+    "testEnvironment": "node"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}

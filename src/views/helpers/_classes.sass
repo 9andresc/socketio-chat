@@ -1,0 +1,21 @@
++responsive-invisibility('.isVisibleOnPhone')
++responsive-invisibility('.isVisibleOnTablet')
++responsive-invisibility('.isVisibleOnDesktop')
+
++media('<=phone')
+  +responsive-visibility('.isVisibleOnPhone')
+
++media('>phone', '<=tablet')
+  +responsive-visibility('.isVisibleOnTablet')
+
++media('>tablet')
+  +responsive-visibility('.isVisibleOnDesktop')
+
++media('<=phone')
+  +responsive-invisibility('.isHiddenOnPhone')
+
++media('>phone', '<=tablet')
+  +responsive-invisibility('.isHiddenOnTablet')
+
++media('>tablet')
+  +responsive-invisibility('.isHiddenOnDesktop')

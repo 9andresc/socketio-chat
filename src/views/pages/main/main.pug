@@ -1,0 +1,10 @@
+extends ../../base/_base
+
+block css
+  link(rel='stylesheet' href=`/css/${cssFilename}`)
+
+block content
+  h1(class='t1') Hello
+
+block js
+  script(src=`/js/${jsFilename}`)
