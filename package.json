@@ -68,6 +68,7 @@
     "mongoose": "4.9.7",
     "morgan": "1.8.1",
     "pug": "2.0.0-beta.12",
+    "socket.io": "2.0.1",
     "validator": "7.0.0",
     "winston": "2.3.1"
   },
