@@ -4,7 +4,11 @@ block css
   link(rel='stylesheet' href=`/css/${cssFilename}`)
 
 block content
-  h1(class='t1') Hello
+  ul(class='c-messages')
+  
+  form(class='c-form' id='form' action='javascript:void(0);')
+    input(class='o-form__message-input' autocomplete='off')
+    button(class='o-form__send-button' type='submit' form='form') Send
 
 block js
   script(src=`/js/${jsFilename}`)

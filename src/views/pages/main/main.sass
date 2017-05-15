@@ -1,2 +1,53 @@
 @import "../../base/base"
 @import "../../helpers/helpers"
+
+.c-messages
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+  li
+    padding: .5rem 1rem
+
+    &:nth-child(odd)
+      background-color: $grey-light
+
+.c-form
+  bottom: 0
+  left: 0
+  position: fixed
+
+  width: 100%
+
+.o-form__message-input
+  border: 0
+  box-shadow: inset 0px 0px 0px 1px $grey
+  padding: 1rem
+  width: 90%
+
+  color: $font-primary-color
+  font-family: $primary-font-family
+  font-size: 1rem
+
+  &:focus
+    outline: 0
+
+.o-form__send-button
+  border: 0
+  padding: 1rem
+  width: 10%
+
+  background: linear-gradient(to bottom right, $primary-color, lighten($primary-color, 5%))
+
+  cursor: pointer
+
+  color: $white
+  font-family: $primary-font-family
+  font-size: 1rem
+  font-weight: bold
+  text-transform: uppercase
+
+  &:active,
+  &:focus,
+  &:hover
+    outline: 0
