@@ -40,7 +40,7 @@ connectToDB(() => {
       return res.render('pages/404/404', {
         baseURL,
         cssFilename,
-        title: 'Página no encontrada | YvY'
+        title: 'Página no encontrada | Socketio'
       })
     }
 
