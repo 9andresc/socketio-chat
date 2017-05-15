@@ -15,6 +15,6 @@ module.exports = (req, res) => {
     baseURL,
     cssFilename,
     jsFilename,
-    title: 'YvY | Gana plata de manera colaborativa'
+    title: 'Socketio | Real-time chat'
   })
 }
